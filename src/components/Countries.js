@@ -18,11 +18,14 @@ export default class Countries extends React.Component {
   render() {
     return (
       <>
-        <select>
-          {this.state.countries.map((countries) => (
-            <option>{countries.name}</option>
-          ))}
-        </select>
+        <div>
+        <h1>Nombre de países</h1>
+          <select>
+            {this.state.countries.map((countries) => (
+              <option>{countries.name}</option>
+            ))}
+          </select>
+        </div>
       </>
     );
   }

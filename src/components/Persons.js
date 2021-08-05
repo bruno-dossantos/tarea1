@@ -17,7 +17,8 @@ export default class PersonList extends React.Component {
   render() {
     return (
       <div>
-        {this.state.persons.map((person) => (
+        <h1>Nombre de personas random</h1>
+          {this.state.persons.map((person) => (
           <p>{person.name}</p>
         ))}
       </div>
